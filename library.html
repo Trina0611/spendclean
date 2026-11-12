@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library | SpendClean</title>
+  <meta name="description" content="Every company in the SpendClean catalog, A to Z, with its mark. Search by name, or filter by category and status.">
+  <link rel="canonical" href="https://spendclean.com/library.html">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="library">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="masthead-top"><span>A public library of records checks</span><span data-needs-meta hidden>Wave <span data-bind="wave"></span>, checked <span data-bind="last-verified"></span></span></p>
+      <a class="masthead-title" href="index.html">Spend<em>Clean</em></a>
+      <p class="masthead-tag">Company political giving, read straight from the public record</p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="lib-head">
+        <div>
+          <p class="kicker">The full catalog, A to Z</p>
+          <h1>Library</h1>
+          <p class="deck" data-needs-meta hidden>All <span data-bind="total"></span> companies from Wave <span data-bind="wave"></span>, each with its mark and a page showing the record behind it.</p>
+          <p><a class="btn" id="preset-clean" href="library.html?status=clean-verified">Show only the clean-verified companies</a></p>
+        </div>
+        <p class="margin-note">Tap any name to see the quoted record, the source, and the cycle we checked.</p>
+      </div>
+
+      <form class="filters" id="filters" role="search" aria-label="Filter companies">
+        <div>
+          <label for="q">Company name</label>
+          <input id="q" name="q" type="search" placeholder="Start typing a name" autocomplete="off">
+        </div>
+        <div>
+          <label for="category">Category</label>
+          <select id="category" name="category">
+            <option value="">All categories</option>
+          </select>
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="">All statuses</option>
+          </select>
+        </div>
+      </form>
+
+      <div class="results-bar">
+        <p class="mono" id="result-count" role="status" aria-live="polite">Loading companies...</p>
+        <button class="btn btn-plain" type="button" id="clear-filters" hidden>Clear filters</button>
+      </div>
+
+      <h2 class="visually-hidden">Results</h2>
+      <ol class="ledger" id="results"></ol>
+
+      <div class="empty margin-note arrow-note" id="empty" hidden>
+        <p><strong>Nothing matches those filters.</strong> Try fewer letters, or clear the filters and start over. If a company you shop with is not here at all, <a href="suggest.html">suggest it for the next wave</a>.</p>
+        <p><button class="btn btn-plain" type="button" id="empty-clear">Clear filters</button></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <p class="project">SpendClean is a We The People / Ginsburg Lewis project.</p>
+      <p>A public library of records checks. Not legal advice, not financial advice, and not a lecture.</p>
+      <p class="mono" data-needs-meta hidden>Wave <span data-bind="wave"></span>. Last verified <span data-bind="last-verified"></span>. Set in your device's own typefaces.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suggest a Company / Corrections | SpendClean</title>
+  <meta name="description" content="Suggest a company for a future SpendClean wave, or ask for a correction with a source.">
+  <link rel="canonical" href="https://spendclean.com/suggest.html">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="suggest">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="masthead-top"><span>A public library of records checks</span><span data-needs-meta hidden>Wave <span data-bind="wave"></span>, checked <span data-bind="last-verified"></span></span></p>
+      <a class="masthead-title" href="index.html">Spend<em>Clean</em></a>
+      <p class="masthead-tag">Company political giving, read straight from the public record</p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap suggest-grid">
+      <div>
+        <p class="kicker">Write to the catalog</p>
+        <h1>Suggest a Company / Corrections</h1>
+        <p class="deck">The next wave is built partly from suggestions. If a store, bank, or brand you use is missing, name it here.</p>
+        <p>Think a page is wrong? Tell us which one and why. If you have a source, such as an FEC filing or a company statement, paste the link in your note. We check every correction against the public record before anything changes.</p>
+        <p class="margin-note arrow-note"><strong>Suggestions are not open yet.</strong> This form is not connected to any service, so nothing typed here is sent or saved. We are connecting the form now, and this page will say so plainly when it works.</p>
+      </div>
+
+      <div class="postcard">
+        <div id="thanks" class="thanks" role="status" tabindex="-1"></div>
+
+        <form id="suggest-form" class="form" novalidate>
+          <p class="mono" style="margin:0">Form not yet open. Please do not type anything here yet.</p>
+
+          <div class="field">
+            <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error" disabled>
+            <p class="error" id="name-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization" required aria-describedby="company-error" disabled>
+            <p class="error" id="company-error"></p>
+          </div>
+
+          <div class="field">
+            <label for="note">Note <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="note" name="note" required aria-describedby="note-hint note-error" disabled></textarea>
+            <p class="hint" id="note-hint">New suggestion or correction? Say which. For a correction, a link to the record helps most.</p>
+            <p class="error" id="note-error"></p>
+          </div>
+
+          <div>
+            <button class="btn" type="submit" disabled>Not yet open</button>
+          </div>
+        </form>
+        <noscript><p>This form needs JavaScript to work.</p></noscript>
+      </div>
+    </div>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <p class="project">SpendClean is a We The People / Ginsburg Lewis project.</p>
+      <p>A public library of records checks. Not legal advice, not financial advice, and not a lecture.</p>
+      <p class="mono" data-needs-meta hidden>Wave <span data-bind="wave"></span>. Last verified <span data-bind="last-verified"></span>. Set in your device's own typefaces.</p>
+    </div>
+  </footer>
+</body>
+</html>

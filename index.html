@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpendClean | A public directory of company political giving records</title>
+  <meta name="description" content="SpendClean is a public directory of company political giving records. Each company gets one of three labels, clean-verified, flagged, or not yet verified, and every entry shows the public record behind the label.">
+  <link rel="canonical" href="https://spendclean.com/">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="masthead-top"><span>A public library of records checks</span><span data-needs-meta hidden>Wave <span data-bind="wave"></span>, checked <span data-bind="last-verified"></span></span></p>
+      <a class="masthead-title" href="index.html">Spend<em>Clean</em></a>
+      <p class="masthead-tag">Company political giving, read straight from the public record</p>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="front-lead" aria-labelledby="promise">
+        <p class="kicker" data-needs-meta hidden>Wave <span data-bind="wave"></span> is in: <span data-bind="total"></span> companies</p>
+        <h1 id="promise">SpendClean is a public directory of company political giving records.</h1>
+        <p class="deck">We look at public records to see what they show about company political action committees and political contributions. Each company gets one of three labels: clean-verified, flagged, or not yet verified. Every entry identifies its source and shows the record behind the label.</p>
+        <p class="deck">Start with the clean-verified list below, or look up a company you shop with. Read what we found, check the source, and decide what matters to you.</p>
+
+        <form class="search-line" action="library.html" method="get" role="search">
+          <label for="home-q">Look up a company</label>
+          <input id="home-q" name="q" type="search" placeholder="A grocer, an airline, your bank..." autocomplete="off">
+          <button class="btn" type="submit">Look it up</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="clean-heading">
+        <h2 id="clean-heading">The clean-verified companies<span data-needs-meta hidden>: all <span data-bind="count-clean-verified"></span> of them</span></h2>
+        <p>For these companies, we found no corporate PAC and no corporate contributions in the records we reviewed for the election cycle shown on each company page. That is a finding about the records checked, not a guarantee about every kind of political activity a company or its affiliates may engage in. The quoted source sits next to each name, and the name opens its full page with the record.</p>
+        <ol class="ledger" id="clean-list">
+          <li>Loading the clean-verified list...</li>
+        </ol>
+        <p style="margin-top:1.2rem"><a class="btn btn-plain" href="library.html?status=clean-verified">Show only these in the Library</a></p>
+        <p class="margin-note">The library also lists flagged companies and companies we are still checking, so it stays honest and complete. Each of those entries says what was found or what is still to check. They are further down this page and in the <a href="library.html">Library</a>.</p>
+      </section>
+
+      <div class="front-grid">
+        <section aria-labelledby="tally-heading">
+          <h2 id="tally-heading">The tally so far</h2>
+          <table class="tally" id="tally">
+            <tbody><tr><td>Loading the count...</td></tr></tbody>
+          </table>
+        </section>
+
+        <aside class="taped" aria-labelledby="marks-heading">
+          <h2 id="marks-heading">How to read the marks</h2>
+          <dl class="marks">
+            <dt><span class="stamp stamp-clean">Clean-verified</span></dt>
+            <dd>We found no corporate PAC and no corporate contributions in the records we checked.</dd>
+            <dt><span class="stamp stamp-flagged">Flagged</span></dt>
+            <dd>We found a corporate PAC. Where the record states an amount, we copy it word for word. One company stays flagged on an older catalog record even though no committee for it appears in the current FEC registry; its page says so plainly.</dd>
+            <dt><span class="stamp stamp-pending">Not yet verified</span></dt>
+            <dd>We started, but a question is still open, often which legal name a company files under. Never shown as clean.</dd>
+          </dl>
+        </aside>
+      </div>
+
+      <section aria-labelledby="aisles-heading">
+        <h2 id="aisles-heading">Browse by aisle</h2>
+        <ul class="aisles" id="aisles">
+          <li>Loading aisles...</li>
+        </ul>
+        <p class="margin-note">Each aisle holds every company in it, whatever its mark. Some carry a fuller label on their page, like home goods or tech/telecom, and sit in the closest aisle here.</p>
+      </section>
+
+      <section aria-labelledby="shelves-heading">
+        <h2 id="shelves-heading">The rest of the library</h2>
+        <div class="shelves" id="shelves" data-statuses="flagged,not-yet-verified">
+          <p class="loading">Loading companies...</p>
+          <p class="margin-note">These stay on the site on purpose. A library that only showed the good news would be harder to trust. Every flagged and not-yet-verified page quotes its record too.</p>
+        </div>
+      </section>
+
+      <section class="front-close" aria-labelledby="close-heading">
+        <h2 id="close-heading" class="visually-hidden">Before you go</h2>
+        <p>Missing a store you use? <a href="suggest.html">Tell us</a> and we will look it up for a future wave. Wondering how a company earns its mark? The <a href="methodology.html">methodology</a> spells it out, limits included. And the <a href="about.html">about page</a> says who this is for.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="colophon">
+    <div class="wrap">
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html">Library</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="suggest.html">Suggest</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <p class="project">SpendClean is a We The People / Ginsburg Lewis project.</p>
+      <p>A public library of records checks. Not legal advice, not financial advice, and not a lecture.</p>
+      <p class="mono" data-needs-meta hidden>Wave <span data-bind="wave"></span>. Last verified <span data-bind="last-verified"></span>. Set in your device's own typefaces.</p>
+    </div>
+  </footer>
+</body>
+</html>
